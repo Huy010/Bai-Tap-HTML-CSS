@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/img/3d-building-house-models-02.png">
+    <title>Gia Huy: Nhà nghỉ cho thuê theo giờ</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- -----Begin Header----- -->
+        <div class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <a href="./index.html" class="header__logo-icon">
+                            <svg width="30" height="32" fill="currentcolor" style="display: block;">
+                                <path
+                                    d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
+                                </path>
+                            </svg>
+                            <span class="header__logo-text">airbnb</span>
+                        </a>
+
+                    </div>
+                    <div class="header__between">
+                        <ul class="header__between-list">
+                            <li class="header__between-list-item">
+                                Nơi ở
+                            </li>
+
+                            <li class="header__between-list-item">
+                                Trải nghiệm
+                            </li>
+
+                            <li class="header__between-list-item">
+                                Trải nghiệm trực tuyến
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="header__user">
+                        <p class="header__host">Trở thành chủ nhà</p>
+                        <i class="fas fa-globe-asia header__word"></i>
+                        <div class="header__user-box">
+                            <i class="fas fa-bars header__icon-bars"></i>
+                            <i class="fas fa-user-circle header__icon-user"></i>
+
+                            <div class="header__user-choice">
+                                <p>Đăng ký</p>
+                                <p>Đăng nhập</p>
+                                <hr>
+                                <p>Cho thuê nhà</p>
+                                <p>Tổ chức trải nghiệm</p>
+                                <p>Trợ giúp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----Header Search----- -->
+            <div class="header-search">
+                <div class="header-search__location">
+                    <label for="area" class="header-search__location-label">
+                        <span class="header-search__title">Địa điểm</span>
+                    </label>
+                    <input id="area" class="header-search__note header-search__location-text" type="text" placeholder="Bạn muốn đi đâu?">            
+
+                    <div class="header-location-suggestions">
+                        <span class="header-location__suggestions-text">Mọi lúc, mọi nơi</span>
+                        <div class="header-location__suggestions-button">
+                            <span class="header-location__suggestions-button-text">Tìm kiếm linh hoạt</span> 
+                            <i class="fas fa-chevron-right header-location__suggestions-button-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-search__time header-search__time-in">
+                    <span class="header-search__title">Nhận phòng</span>
+                    <span class="header-search__note">Chọn ngày</span>
+                </div>
+                
+                <div class="header-search__time header-search__time-out">
+                    <span class="header-search__title">Trả phòng</span>
+                    <span class="header-search__note">Chọn ngày</span>
+                    
+                </div>
+                <div class="header-search__people">
+                    <span class="header-search__title">Thêm khách</span>
+                    <span class="header-search__note">Bạn có bao nhiêu người?</span>
+
+                </div>
+                <div class="header-search__search-button">
+                    <i class="fas fa-search header-search__search-button-icon"></i>
+                </div>
+
+                <div class="header__calender">
+                    <div class="header__calender-header">
+                        <span class="header__calender-header-text">Lịch</span>
+                        <span class="header__calender-header-daily">Ngày sinh hoạt</span>
+                    </div>
+                    <div class="header__calender-container">
+                        
+                        <div class="grid__row">
+                            <div class="header__calender-month colum-2">
+                                <div class="header__calender-title">
+                                    <i class="fas fa-chevron-left header__calender-title-icon"></i>
+                                    <div class="header__calender-text">tháng 9 năm 2021</div>
+                                </div>
+                                
+
+                                <div class="grid__row">
+                                    <div class="header__calender-week grid__row">
+                                        <div class="colum-7 header__calender-day--title"><div>T2</div></div>
+                                        <div class="colum-7 header__calender-day--title"><div>T3</div></div>
+                                        <div class="colum-7 header__calender-day--title"><div>T4</div></div>
+                                        <div class="colum-7 header__calender-day--title"><div>T5</div></div>
+                                        <div class="colum-7 header__calender-day--title"><div>T6</div></div>
+                                        <div class="colum-7 header__calender-day--title"><div>T7</div></div>
+                                        <div class="colum-7 header__calender-day--title"><div>CN</div></div>
+                                    </div>
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--past"></div>
+                                        <div class="colum-7 header__calender-day header__calender-day--past"></div>
+                                        <div class="colum-7 header__calender-day header__calender-day--past">1</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--past">2</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--past">3</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--past">4</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">5</div>
+                                    </div>
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">6</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">7</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">8</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">9</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">10</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">11</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">12</div>
+
+                                    </div>
+
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">13</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">14</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">15</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">16</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">17</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">18</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">19</div>
+                                        
+                                    </div>
+                                    
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">20</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">21</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">22</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">23</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">24</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">25</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">26</div>
+                                        
+                                    </div>
+                                    
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">27</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">28</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">29</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">30</div>
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day"></div>
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="header__calender-month colum-2">
+                                <div class="header__calender-title">
+                                    <div class="header__calender-text">tháng 9 năm 2021</div>                                
+                                    <i class="fas fa-chevron-right header__calender-title-icon"></i>
+                                </div>
+                                <div class="grid__row">
+                                    <div class="header__calender-week grid__row">
+                                        <div class="colum-7 header__calender-day--title">T2</div>
+                                        <div class="colum-7 header__calender-day--title">T3</div>
+                                        <div class="colum-7 header__calender-day--title">T4</div>
+                                        <div class="colum-7 header__calender-day--title">T5</div>
+                                        <div class="colum-7 header__calender-day--title">T6</div>
+                                        <div class="colum-7 header__calender-day--title">T7</div>
+                                        <div class="colum-7 header__calender-day--title">CN</div>
+                                    </div>
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">1</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">2</div>
+
+                                    </div>
+
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">3</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">4</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">5</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">6</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">7</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">8</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">9</div>
+
+                                    </div>
+
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">10</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">11</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">12</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">13</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">14</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">15</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">16</div>
+
+                                    </div>
+
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">17</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">18</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">19</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">20</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">21</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">22</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">23</div>
+
+                                    </div>
+
+                                    <div class="grid__row">
+                                        <div class="colum-7 header__calender-day header__calender-day--future">24</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">25</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">29</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">30</div>
+                                        <div class="colum-7 header__calender-day header__calender-day--future">31</div>
+                                        <div class="colum-7 header__calender-day"></div>
+                                        <div class="colum-7 header__calender-day"></div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----Header Background -->
+            <div class="header__background">
+                <!-- <img src="./assets/img/ThungLung.jpg" class="header__background-img"></img> -->
+            </div>
+            
+            <div class="header-search__footer">
+                <span class="header__background-text">Bạn chưa biết nên đi đâu? Tuyệt vời...</span>
+                <a href="./index.html" class="header-search__footer-link">
+                    <div class="header-search__footer-button">
+                        <span>Tìm kiếm linh hoạt</span> 
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <!-- -----End Header----- -->
+
+        <!-- -----Begin Container----- -->
+        <div class="app__container">
+
+        </div>
+        <!-- -----End Container----- -->
+
+        <!-- -----Begin Footer----- -->
+        <div class="footer">
+
+        </div>
+        <!-- -----End Footer----- -->
+    </div>
+
+</body>
+
+</html>

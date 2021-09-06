@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #ff385c;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #222;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /*----------1rem = 10px----------*/
+    line-height: 1.6rem; /* 16px */
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    background-color: rgba(100, 81, 81, 0.692);
+    font-weight: 400;
+}
+
+/* -----Responsive----- */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+
+/* -----Colum----- */
+
+.grid__colum-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3334%;
+}
+
+.grid__colum-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+
+.colum-2 {
+    width: 50%;
+}
+
+.colum-7 {
+    width: 14.285%;
+}
