@@ -58,3 +58,13 @@ html {
 .colum-7 {
     width: 14.285%;
 }
+
+/* ----Key Frames----- */
+@keyframes appear {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}

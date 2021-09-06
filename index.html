@@ -76,7 +76,7 @@
                     <label for="area" class="header-search__location-label">
                         <span class="header-search__title">Địa điểm</span>
                     </label>
-                    <input id="area" class="header-search__note header-search__location-text" type="text" placeholder="Bạn muốn đi đâu?">            
+                    <input id="area" class="header-search__location-input" type="text" placeholder="Bạn muốn đi đâu?">            
 
                     <div class="header-location-suggestions">
                         <span class="header-location__suggestions-text">Mọi lúc, mọi nơi</span>
@@ -89,12 +89,323 @@
                 <div class="header-search__time header-search__time-in">
                     <span class="header-search__title">Nhận phòng</span>
                     <span class="header-search__note">Chọn ngày</span>
+
+                    <div class="header__calender header__calender--left">
+                        <div class="header__calender-header">
+                            <span class="header__calender-header-text">Lịch</span>
+                            <span class="header__calender-header-daily">Ngày sinh hoạt</span>
+                        </div>
+                        <div class="header__calender-container">
+                            
+                            <div class="grid__row">
+                                <div class="header__calender-month colum-2">
+                                    <div class="header__calender-title">
+                                        <i class="fas fa-chevron-left header__calender-title-icon"></i>
+                                        <div class="header__calender-text">tháng 9 năm 2021</div>
+                                    </div>
+                                    
+    
+                                    <div class="grid__row">
+                                        <div class="header__calender-week grid__row">
+                                            <div class="colum-7 header__calender-day--title"><div>T2</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T3</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T4</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T5</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T6</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T7</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>CN</div></div>
+                                        </div>
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--past"></div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past"></div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">1</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">2</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">3</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">4</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">5</div>
+                                        </div>
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">6</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">7</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">8</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">9</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">10</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">11</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">12</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">13</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">14</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">15</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">16</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">17</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">18</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">19</div>
+                                            
+                                        </div>
+                                        
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">20</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">21</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">22</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">23</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">24</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">25</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">26</div>
+                                            
+                                        </div>
+                                        
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">27</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">28</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">29</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">30</div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="header__calender-month colum-2">
+                                    <div class="header__calender-title">
+                                        <div class="header__calender-text">tháng 10 năm 2021</div>                                
+                                        <i class="fas fa-chevron-right header__calender-title-icon"></i>
+                                    </div>
+                                    <div class="grid__row">
+                                        <div class="header__calender-week grid__row">
+                                            <div class="colum-7 header__calender-day--title">T2</div>
+                                            <div class="colum-7 header__calender-day--title">T3</div>
+                                            <div class="colum-7 header__calender-day--title">T4</div>
+                                            <div class="colum-7 header__calender-day--title">T5</div>
+                                            <div class="colum-7 header__calender-day--title">T6</div>
+                                            <div class="colum-7 header__calender-day--title">T7</div>
+                                            <div class="colum-7 header__calender-day--title">CN</div>
+                                        </div>
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">1</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">2</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">3</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">4</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">5</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">6</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">7</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">8</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">9</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">10</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">11</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">12</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">13</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">14</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">15</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">16</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">17</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">18</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">19</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">20</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">21</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">22</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">23</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">24</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">25</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">29</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">30</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">31</div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="header-search__time header-search__time-out">
                     <span class="header-search__title">Trả phòng</span>
                     <span class="header-search__note">Chọn ngày</span>
                     
+                    <div class="header__calender header__calender--right">
+                        <div class="header__calender-header">
+                            <span class="header__calender-header-text">Lịch</span>
+                            <span class="header__calender-header-daily">Ngày sinh hoạt</span>
+                        </div>
+                        <div class="header__calender-container">
+                            
+                            <div class="grid__row">
+                                <div class="header__calender-month colum-2">
+                                    <div class="header__calender-title">
+                                        <i class="fas fa-chevron-left header__calender-title-icon"></i>
+                                        <div class="header__calender-text">tháng 9 năm 2021</div>
+                                    </div>
+                                    
+    
+                                    <div class="grid__row">
+                                        <div class="header__calender-week grid__row">
+                                            <div class="colum-7 header__calender-day--title"><div>T2</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T3</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T4</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T5</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T6</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>T7</div></div>
+                                            <div class="colum-7 header__calender-day--title"><div>CN</div></div>
+                                        </div>
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--past"></div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past"></div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">1</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">2</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">3</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--past">4</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">5</div>
+                                        </div>
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">6</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">7</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">8</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">9</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">10</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">11</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">12</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">13</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">14</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">15</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">16</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">17</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">18</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">19</div>
+                                            
+                                        </div>
+                                        
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">20</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">21</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">22</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">23</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">24</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">25</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">26</div>
+                                            
+                                        </div>
+                                        
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">27</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">28</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">29</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">30</div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+    
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="header__calender-month colum-2">
+                                    <div class="header__calender-title">
+                                        <div class="header__calender-text">tháng 10 năm 2021</div>                                
+                                        <i class="fas fa-chevron-right header__calender-title-icon"></i>
+                                    </div>
+                                    <div class="grid__row">
+                                        <div class="header__calender-week grid__row">
+                                            <div class="colum-7 header__calender-day--title">T2</div>
+                                            <div class="colum-7 header__calender-day--title">T3</div>
+                                            <div class="colum-7 header__calender-day--title">T4</div>
+                                            <div class="colum-7 header__calender-day--title">T5</div>
+                                            <div class="colum-7 header__calender-day--title">T6</div>
+                                            <div class="colum-7 header__calender-day--title">T7</div>
+                                            <div class="colum-7 header__calender-day--title">CN</div>
+                                        </div>
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">1</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">2</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">3</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">4</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">5</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">6</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">7</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">8</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">9</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">10</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">11</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">12</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">13</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">14</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">15</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">16</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">17</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">18</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">19</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">20</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">21</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">22</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">23</div>
+    
+                                        </div>
+    
+                                        <div class="grid__row">
+                                            <div class="colum-7 header__calender-day header__calender-day--future">24</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">25</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">29</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">30</div>
+                                            <div class="colum-7 header__calender-day header__calender-day--future">31</div>
+                                            <div class="colum-7 header__calender-day"></div>
+                                            <div class="colum-7 header__calender-day"></div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="header-search__people">
                     <span class="header-search__title">Thêm khách</span>
@@ -103,162 +414,6 @@
                 </div>
                 <div class="header-search__search-button">
                     <i class="fas fa-search header-search__search-button-icon"></i>
-                </div>
-
-                <div class="header__calender">
-                    <div class="header__calender-header">
-                        <span class="header__calender-header-text">Lịch</span>
-                        <span class="header__calender-header-daily">Ngày sinh hoạt</span>
-                    </div>
-                    <div class="header__calender-container">
-                        
-                        <div class="grid__row">
-                            <div class="header__calender-month colum-2">
-                                <div class="header__calender-title">
-                                    <i class="fas fa-chevron-left header__calender-title-icon"></i>
-                                    <div class="header__calender-text">tháng 9 năm 2021</div>
-                                </div>
-                                
-
-                                <div class="grid__row">
-                                    <div class="header__calender-week grid__row">
-                                        <div class="colum-7 header__calender-day--title"><div>T2</div></div>
-                                        <div class="colum-7 header__calender-day--title"><div>T3</div></div>
-                                        <div class="colum-7 header__calender-day--title"><div>T4</div></div>
-                                        <div class="colum-7 header__calender-day--title"><div>T5</div></div>
-                                        <div class="colum-7 header__calender-day--title"><div>T6</div></div>
-                                        <div class="colum-7 header__calender-day--title"><div>T7</div></div>
-                                        <div class="colum-7 header__calender-day--title"><div>CN</div></div>
-                                    </div>
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--past"></div>
-                                        <div class="colum-7 header__calender-day header__calender-day--past"></div>
-                                        <div class="colum-7 header__calender-day header__calender-day--past">1</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--past">2</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--past">3</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--past">4</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">5</div>
-                                    </div>
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">6</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">7</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">8</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">9</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">10</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">11</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">12</div>
-
-                                    </div>
-
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">13</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">14</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">15</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">16</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">17</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">18</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">19</div>
-                                        
-                                    </div>
-                                    
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">20</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">21</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">22</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">23</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">24</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">25</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">26</div>
-                                        
-                                    </div>
-                                    
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">27</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">28</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">29</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">30</div>
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day"></div>
-
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="header__calender-month colum-2">
-                                <div class="header__calender-title">
-                                    <div class="header__calender-text">tháng 9 năm 2021</div>                                
-                                    <i class="fas fa-chevron-right header__calender-title-icon"></i>
-                                </div>
-                                <div class="grid__row">
-                                    <div class="header__calender-week grid__row">
-                                        <div class="colum-7 header__calender-day--title">T2</div>
-                                        <div class="colum-7 header__calender-day--title">T3</div>
-                                        <div class="colum-7 header__calender-day--title">T4</div>
-                                        <div class="colum-7 header__calender-day--title">T5</div>
-                                        <div class="colum-7 header__calender-day--title">T6</div>
-                                        <div class="colum-7 header__calender-day--title">T7</div>
-                                        <div class="colum-7 header__calender-day--title">CN</div>
-                                    </div>
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">1</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">2</div>
-
-                                    </div>
-
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">3</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">4</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">5</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">6</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">7</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">8</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">9</div>
-
-                                    </div>
-
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">10</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">11</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">12</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">13</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">14</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">15</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">16</div>
-
-                                    </div>
-
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">17</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">18</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">19</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">20</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">21</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">22</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">23</div>
-
-                                    </div>
-
-                                    <div class="grid__row">
-                                        <div class="colum-7 header__calender-day header__calender-day--future">24</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">25</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">29</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">30</div>
-                                        <div class="colum-7 header__calender-day header__calender-day--future">31</div>
-                                        <div class="colum-7 header__calender-day"></div>
-                                        <div class="colum-7 header__calender-day"></div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 

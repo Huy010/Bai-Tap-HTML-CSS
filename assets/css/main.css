@@ -71,8 +71,12 @@
     left: 50%;
     right: 50%;
     top: 21px;
-    -webkit-transition: right ease-out 0.3s, left ease-out 0.3s;
+
     transition: right ease-out 0.3s, left ease-out 0.3s;
+    -moz-transition: right ease-out 0.3s, left ease-out 0.3s; /* Firefox 4 */
+    -webkit-transition: right ease-out 0.3s, left ease-out 0.3s; /* Safari and Chrome */
+    -o-transition: right ease-out 0.3s, left ease-out 0.3s; /* Opera */
+    -ms-transition: right ease-out 0.3s, left ease-out 0.3s; /* Explorer 10 */
 }
 
 .header__between-list-item:hover:after {
@@ -236,16 +240,16 @@
     cursor: pointer;
 }
 
-.header-search__location-text {
+.header-search__location-input {
     border: none;
     background: none;
     text-overflow: ellipsis;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--text-color);
 }
 
-.header-search__location-text:focus-visible {
+.header-search__location-input:focus-visible {
     outline: none;
 }
 
@@ -259,17 +263,9 @@
     z-index: 1;
     box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.5);
     display: none;
-    animation: suggestions 0.25s linear;
+    animation: appear 0.25s linear;
 }
 
-@keyframes suggestions {
-    from {
-        opacity: 0;
-    } 
-    to {
-        opacity: 1;
-    }
-}
 
 .header-location-suggestions::after {
     content: "";
@@ -278,7 +274,7 @@
     left: 0;
     width: 50%;
     height: 20px;
-    background-color: red;
+    background-color: transparent;
 }
 
 .header-location__suggestions-text {
@@ -421,34 +417,63 @@
 
 /* -----Header Calender----- */
 
-.header-search__time-in:hover ~ .header__calender {
+.header-search__time-in:hover .header__calender--left {
+    display: block;
+}
+
+.header-search__time-out:hover .header__calender--right {
     display: block;
 }
 
 .header__calender {
-    position: absolute;
-    top: 110%;
-    left: 0;
     background-color: #fff;
     width: 850px;
     z-index: 1;
     border-radius: 32px;
     display: none;
+    cursor: context-menu;
+    animation: appear ease-out 0.25s;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.5);
 }
 
-.header__calender::before {
+.header__calender--left {
+    position: absolute;
+    top: 110%;
+    left: -255px;
+}
+
+.header__calender--right {
+    position: absolute;
+    top: 110%;
+    left: -426px;
+}
+
+
+.header__calender--left::before {
     content: "";
     display: block;
     position: absolute;
     width: 170px;
-    height: 50px;
-    top: -30px;
-    left: 260px; 
-    background-color: red;
+    height: 20px;
+    top: -10px;
+    left: 255px; 
+    background-color: transparent;
     z-index: 2;
     cursor: pointer;
 }
 
+.header__calender--right::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    top: -10px;
+    left: 424px;
+    background-color: transparent;
+    z-index: 2;
+    cursor: pointer;
+}
 
 .header__calender-header {
     display: flex;
@@ -564,7 +589,7 @@
 }
 
 .header-search__footer {
-    width: 400px;
+    width: 600px;
     text-align: center;
     margin: 156px auto;
 }
